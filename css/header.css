@@ -1,0 +1,16 @@
+.header-bg {
+  background-color: var(--c12);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0px;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--c1);
+}

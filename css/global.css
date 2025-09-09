@@ -1,0 +1,25 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "inter", arial, sans-serif;
+  margin-bottom: 200px;
+}
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.botao {
+  color: var(--c1);
+  background-color: var(--l1);
+  padding: 8px 12px;
+  border-radius: 50px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.125;
+}
