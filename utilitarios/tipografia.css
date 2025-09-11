@@ -5,7 +5,7 @@
 .font-2-x {
   font: 600 2rem/1.3 "inter", sans-serif;
   color: var(--c3);
-  margin-bottom: 4px;
+  margin-bottom: 8px;
 }
 .font-3-m {
   color: var(--c2);

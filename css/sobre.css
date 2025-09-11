@@ -38,5 +38,12 @@
 }
 
 .lista p {
-  margin-bottom: 24px;
+  margin-bottom: 42px;
+}
+
+.sobre-plano h2 {
+  margin-bottom: 12px;
+}
+.sobre-plano p:has(+ a.botao) {
+  margin-bottom: 80px;
 }
