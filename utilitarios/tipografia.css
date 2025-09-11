@@ -9,7 +9,7 @@
 }
 .font-3-m {
   color: var(--c2);
-  font: 600 1.5rem/1.5 "inter", sans-serif;
+  font: 500 1.25rem/1.5 "inter", sans-serif;
   margin-bottom: 40px;
 }
 .font-3-mb {
@@ -31,5 +31,7 @@
 
 h6 {
   color: var(--c5);
-  font: 500 1rem/1.5 "inter", sans-serif;
+  font: 500 0.75rem/1.5 "inter", sans-serif;
+  margin: 12px 0px;
+  margin-left: 24px;
 }

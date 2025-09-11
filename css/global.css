@@ -14,14 +14,14 @@ body {
 .botao {
   color: var(--c1);
   background-color: var(--l1);
-  padding: 8px 12px;
+  padding: 12px 24px;
   border-radius: 50px;
+  font-size: 1.125rem;
 }
 
 a {
   text-decoration: none;
   color: inherit;
-  font-size: 1.125;
 }
 
 ul {
