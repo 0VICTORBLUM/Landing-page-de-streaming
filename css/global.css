@@ -23,3 +23,16 @@ a {
   color: inherit;
   font-size: 1.125;
 }
+
+ul {
+  list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+p,
+a {
+  margin: 0px;
+  padding: 0px;
+}
