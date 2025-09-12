@@ -1,5 +1,5 @@
 .header-bg {
-  background-color: var(--c12);
+  background-color: var(--c13);
 }
 
 .header {
@@ -13,4 +13,10 @@
   font-size: 1.5rem;
   font-weight: 700;
   color: var(--c1);
+}
+
+.header > .botao {
+  padding: 8px 12px;
+  border-radius: 50px;
+  font-size: 1rem;
 }

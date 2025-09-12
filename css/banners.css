@@ -16,18 +16,16 @@
 
 .card-bg {
   backdrop-filter: blur(10px);
+  box-shadow: 0 0px 8px rgba(12, 12, 12, 0.1);
   padding: 12px 24px;
   border-radius: 12px;
-  display: block;
-  /* text-align: center; */
 }
 
 .card > .content {
-  display: block;
+  display: flex;
   max-width: 1200px;
-  margin-left: auto;
-  margin-right: 1000px;
-  width: fit-conten;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .slide-1 {

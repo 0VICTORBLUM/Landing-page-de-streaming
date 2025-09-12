@@ -1,5 +1,5 @@
 .sobre-bg {
-  background-color: var(--c12);
+  background-color: var(--c13);
   padding: 120px 0px;
 }
 
@@ -8,7 +8,6 @@
 }
 
 .lista-bg {
-  background-color: var(--c2);
   padding: 12px 24px;
   border-radius: 8px;
   display: flex;
@@ -17,7 +16,7 @@
 
 .lista-bg span {
   align-self: flex-end;
-  max-width: 40px; /* define o tamanho máximo do ícone */
+  max-width: 40px;
   height: auto;
 }
 
