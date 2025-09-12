@@ -1,0 +1,32 @@
+.catalogo-bg {
+  background-color: var(--c1);
+  width: 100%;
+  padding: 60px 0;
+  overflow: hidden; /* esconde o que passar da tela */
+}
+
+.faixa-1 ul {
+  display: flex;
+  gap: 20px;
+  animation: slide 10s linear infinite; /* velocidade e repetição infinita */
+}
+
+.catalogo li {
+  flex: 0 0 auto;
+}
+
+.catalogo li img {
+  border-radius: 8px;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* animação de movimento */
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-45%); /* metade do conteúdo vai sumir */
+  }
+}
