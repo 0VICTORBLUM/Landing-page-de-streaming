@@ -3,6 +3,7 @@ body {
   padding: 0px;
   font-family: "inter", arial, sans-serif;
   margin-bottom: 200px;
+  background-color: var(--c13);
 }
 
 .container {
