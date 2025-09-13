@@ -2,13 +2,18 @@
   background-color: var(--c1);
   width: 100%;
   padding: 60px 0;
-  overflow: hidden; /* esconde o que passar da tela */
+  overflow: hidden;
+
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
-.faixa-1 ul {
+.catalogo ul {
   display: flex;
   gap: 20px;
-  animation: slide 10s linear infinite; /* velocidade e repetição infinita */
+  justify-content: center;
 }
 
 .catalogo li {
@@ -17,16 +22,82 @@
 
 .catalogo li img {
   border-radius: 8px;
-  height: 200px;
+  height: 250px;
   object-fit: cover;
+  transition: transform 0.3s ease;
 }
 
-/* animação de movimento */
-@keyframes slide {
+.catalogo li img:hover {
+  transform: scale(1.05);
+}
+.faixa-principal li img {
+  height: 300px; /* maior que as outras */
+}
+
+.faixa-principal li:nth-child(2) img {
+  height: 350px;
+}
+
+.faixa-principal ul {
+  align-items: center;
+}
+
+.faixa-2 {
+  margin-bottom: 40px;
+}
+.catalogo a {
+  font: 500 1.125rem/1.5 "inter", sans-serif;
+  border: 2px solid var(--c12);
+  border-radius: 50px;
+  padding: 12px 24px;
+  text-align: center;
+  transition: 0.5s ease;
+}
+
+.catalogo a:hover {
+  border: 2px solid var(--l1);
+  background-color: var(--l1);
+  color: var(--c1);
+}
+
+.faixa-1,
+.faixa-2 {
+  overflow: hidden;
+  position: relative;
+}
+
+.faixa-1 ul,
+.faixa-2 ul {
+  display: flex;
+  gap: 20px;
+  width: max-content;
+}
+
+/* faixa-1: esquerda → direita */
+.faixa-1 ul {
+  animation: moveRight 20s linear infinite;
+}
+
+/* faixa-2: direita → esquerda */
+.faixa-2 ul {
+  animation: moveLeft 20s linear infinite;
+}
+
+/* keyframes */
+@keyframes moveRight {
   from {
-    transform: translateX(0);
+    transform: translateX(-30%);
   }
   to {
-    transform: translateX(-45%); /* metade do conteúdo vai sumir */
+    transform: translateX(0%);
+  }
+}
+
+@keyframes moveLeft {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-30%);
   }
 }

@@ -12,6 +12,7 @@
   border-radius: 8px;
   display: flex;
   flex-direction: column;
+  border: 2px solid var(--l1);
 }
 
 .lista-bg span {
