@@ -1,0 +1,8 @@
+.footer p {
+  color: var(--c10);
+  margin-bottom: 12px;
+}
+
+.footer {
+  margin-bottom: 40px;
+}
