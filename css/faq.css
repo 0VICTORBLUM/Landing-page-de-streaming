@@ -18,10 +18,19 @@
   justify-content: space-between;
 }
 
-.faq-perguntas span {
+.faq-perguntas span img {
+  height: 32px;
+  width: 32px;
   transition: 0.3s;
   transform: rotate(180deg);
 }
-.faq-perguntas span:hover {
+.faq-perguntas span img:hover {
   transform: rotate(0deg);
+}
+
+@media (max-width: 900px) {
+  .faq-perguntas span img {
+    height: 24px;
+    width: 24px;
+  }
 }

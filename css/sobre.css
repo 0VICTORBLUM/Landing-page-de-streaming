@@ -8,12 +8,24 @@
 }
 
 .lista-bg {
+  position: relative; /* necessário para posicionar o ícone dentro */
+  height: 230px;
   padding: 12px 24px;
   border-radius: 8px;
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   border: 2px solid var(--c13);
   transition: 0.5s ease;
+}
+
+@media (max-width: 900px) {
+  .sobre-frases p {
+    margin-bottom: 80px;
+  }
+  .lista-bg {
+    height: 250px;
+  }
 }
 
 .lista-bg:hover {
@@ -25,7 +37,9 @@
 }
 
 .lista-bg span {
-  align-self: flex-end;
+  position: absolute;
+  bottom: 24px; /* distância do fundo */
+  right: 24px; /* distância da lateral */
   max-width: 40px;
   height: auto;
 }
@@ -44,10 +58,6 @@
 
 .lista h3 {
   margin-bottom: 4px;
-}
-
-.lista p {
-  margin-bottom: 42px;
 }
 
 .sobre-plano h2 {
