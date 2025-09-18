@@ -3,11 +3,20 @@
   padding: 120px 0px;
 }
 
-.sobre-frases h1 {
+.sobre-frases p {
   margin-bottom: 120px;
 }
 
 .lista-bg {
+  padding: 12px 24px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid var(--c13);
+  transition: 0.5s ease;
+}
+
+.lista-bg:hover {
   padding: 12px 24px;
   border-radius: 8px;
   display: flex;
@@ -44,6 +53,6 @@
 .sobre-plano h2 {
   margin-bottom: 12px;
 }
-.sobre-plano p:has(+ a.botao) {
+.sobre-plano p:has(+ a.buttom) {
   margin-bottom: 80px;
 }

@@ -1,4 +1,7 @@
-document.querySelectorAll(".faixa-1 ul, .faixa-2 ul").forEach((ul) => {
-  const items = ul.innerHTML; // pega os <li>
-  ul.innerHTML += items; // duplica
+document.addEventListener("DOMContentLoaded", () => {
+  document
+    .querySelectorAll(".faixa-1 ul, .faixa-principal ul, .faixa-2 ul")
+    .forEach((ul) => {
+      ul.innerHTML += ul.innerHTML; // duplica os <li> para efeito de loop
+    });
 });

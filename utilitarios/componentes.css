@@ -1,0 +1,17 @@
+.buttom {
+  font: 500 1.125rem/1.5 "inter", sans-serif;
+  color: var(--c1);
+  border: 2px solid var(--l1);
+  background-color: var(--l1);
+  border-radius: 50px;
+  padding: 8px 16px;
+  text-align: center;
+  transition: 0.5s ease;
+}
+
+.buttom:hover {
+  border: 2px solid var(--l1);
+  color: var(--l1);
+  background-color: transparent;
+  box-sizing: border-box;
+}
