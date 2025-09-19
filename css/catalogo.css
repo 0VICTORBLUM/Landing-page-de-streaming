@@ -69,3 +69,14 @@
     transform: translateX(-20%);
   }
 }
+
+@media (max-width: 750px) {
+  .catalogo li img {
+    height: 150px;
+    margin-bottom: 4px;
+  }
+  .catalogo ul {
+    gap: 12px;
+    margin-bottom: 0px;
+  }
+}

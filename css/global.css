@@ -36,3 +36,10 @@ a {
     margin-right: auto;
   }
 }
+
+@media (max-width: 750px) {
+  .container {
+    margin-left: 32px;
+    margin-right: 32px;
+  }
+}

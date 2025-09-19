@@ -14,3 +14,13 @@
   font-weight: 700;
   color: var(--c1);
 }
+
+@media (max-width: 750px) {
+  .header > .buttom {
+    display: none;
+  }
+  .header {
+    padding: 20px 0px;
+    justify-content: center;
+  }
+}
