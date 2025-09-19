@@ -12,26 +12,28 @@
 
 .catalogo ul {
   display: flex;
-  gap: 20px;
+  gap: 12px;
   justify-content: center;
   width: max-content;
+  margin-bottom: 0px;
 }
 
 .catalogo li {
-  flex: 0 0 auto;
+  overflow: hidden; /* Impede que a imagem ultrapasse os limites do li */
+  border-radius: 8px; /* Aplica borda arredondada ao li */
 }
 
 .catalogo li img {
-  border-radius: 8px;
+  width: 100%;
   height: 250px;
   object-fit: cover;
   transition: transform 0.3s ease;
+  display: block; /* Remove espaços indesejados abaixo da imagem */
 }
 
 .catalogo li img:hover {
-  transform: scale(1.05);
+  transform: scale(1.1);
 }
-
 .faixa-2 {
   margin-bottom: 40px;
 }
@@ -73,10 +75,5 @@
 @media (max-width: 750px) {
   .catalogo li img {
     height: 150px;
-    margin-bottom: 4px;
-  }
-  .catalogo ul {
-    gap: 12px;
-    margin-bottom: 0px;
   }
 }

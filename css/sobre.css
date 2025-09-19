@@ -89,12 +89,17 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-    max-width: 800px;
     margin: 0 auto;
+  }
+  .lista {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
   }
 
   .lista-bg {
-    height: 150px;
+    height: 200px;
     justify-content: center;
     display: grid;
   }
