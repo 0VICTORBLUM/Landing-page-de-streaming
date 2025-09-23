@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
+// manipulando parte do faq
 document.addEventListener("DOMContentLoaded", function () {
   const perguntas = document.querySelectorAll(".faq-perguntas");
 
@@ -36,5 +37,28 @@ document.addEventListener("DOMContentLoaded", function () {
         img.style.transform = "rotate(180deg)";
       }
     });
+  });
+});
+
+// manipulando card-sinopse
+document.addEventListener("DOMContentLoaded", function () {
+  const imagens = document.querySelectorAll(".catalogo img");
+  const modal = document.getElementById("modal-sinopse");
+  const fechar = document.querySelector(".fechar-modal");
+
+  imagens.forEach((img) => {
+    img.addEventListener("click", () => {
+      modal.style.display = "block";
+    });
+  });
+
+  fechar.addEventListener("click", () => {
+    modal.style.display = "none";
+  });
+
+  window.addEventListener("click", (e) => {
+    if (e.target === modal) {
+      modal.style.display = "none";
+    }
   });
 });

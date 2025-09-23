@@ -1,17 +1,3 @@
-body {
-  color: var(--c1);
-  /* background-color: #fff; */
-}
-
-.card-sinopse {
-  background-color: var(--c13);
-  margin: 20px;
-  border-radius: 16px;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .banner-sinopse {
   display: grid;
   width: 100%;
@@ -53,6 +39,7 @@ body {
   padding: 0px 20px;
   font-size: 1rem;
   color: var(--c5);
+  margin-bottom: 24px;
 }
 
 .sinopse-txt {
@@ -66,16 +53,44 @@ body {
   display: inline-block;
   text-decoration: none;
   width: fit-content;
-  margin: 40px 0px;
+  margin: 20px 0px;
   border: 2px solid var(--l1);
   border-radius: 50px;
-  padding: 12px 24px;
+  background-color: transparent;
+  color: var(--l1);
+  padding: 8px 16px;
   text-align: center;
   transition: 0.5s ease;
 }
 
 .sinopse-txt a:hover {
-  /* border: 2px solid var(--l1); */
   background-color: var(--l1);
   color: var(--c1);
+}
+
+/* codigo para transformar article em modal  */
+.card-sinopse {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  top: 0px;
+  left: 25%;
+  width: 100%;
+  height: 690px;
+  overflow-y: hidden;
+  box-sizing: border-box;
+  background-color: var(--c13);
+  color: var(--c1);
+  margin: 20px;
+  border-radius: 16px;
+  max-width: 750px;
+}
+
+.card-sinopse .fechar-modal {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 24px;
+  color: var(--c1);
+  cursor: pointer;
 }
