@@ -69,28 +69,29 @@
 }
 
 /* codigo para transformar article em modal  */
+
 .card-sinopse {
   display: none;
   position: fixed;
   z-index: 1000;
-  top: 0px;
-  left: 25%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* centraliza perfeitamente */
   width: 100%;
-  height: 690px;
-  overflow-y: hidden;
+  max-width: 750px;
+  height: auto;
   box-sizing: border-box;
   background-color: var(--c13);
   color: var(--c1);
-  margin: 20px;
   border-radius: 16px;
-  max-width: 750px;
+  overflow-y: auto;
 }
-
-.card-sinopse .fechar-modal {
+.card-sinopse .fechar-sinopse {
   position: absolute;
   top: 20px;
   right: 20px;
   font-size: 24px;
   color: var(--c1);
   cursor: pointer;
+  z-index: 1001; /* Garante que fique acima do conteúdo */
 }

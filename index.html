@@ -10,12 +10,13 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
+<div id="overlay"></div>
 
 <body>
   <header class='header-bg'>
     <div class='header container'>
       <a href="home" class='logo' id='home'>NewTV+</a>
-      <a href="login" class='buttom'>Assista</a>
+      <a href="" class='buttom'>Assista</a>
     </div>
   </header>
 
@@ -119,13 +120,13 @@
           <li><img src="./img/transferir.jpg" alt="capa de anime"></li>
         </ul>
       </div>
-      <a href="./" class="buttom">Ver catálogo completo</a>
+      <a href="" class="buttom">Ver catálogo completo</a>
 
     </div>
   </section>
 
   <article class='card-sinopse' id="modal-sinopse">
-    <span class="fechar-modal">&times;</span>
+    <span class="fechar-sinopse">&times;</span>
     <div class='banner-sinopse'>
       <img src="https://images.unsplash.com/photo-1755984706919-e0b790398626?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NTc5NTQ2NTB8&ixlib=rb-4.1.0&q=85" alt="">
       <div class='banner-txt'>
@@ -199,6 +200,55 @@
     <p class="font-3-m">Copyrigth © 2025 NewTV+, todos os direitos reservados </p>
     <p class="font-3-m">Termos de serviço | NewTv e privacidade | Politica de utilização de cookies | Suporte </p>
   </footer>
+
+  <!-- modal de inscrição -->
+  <article class='inscricao container' id="modal-inscricao">
+    <span class="fechar-modal fechar-inscricao">&times;</span>
+    <header>
+      <h1>NTV+</h1>
+    </header>
+    <div class='conteudo'>
+      <div class='titulo'>
+        <h1>Crie sua conta</h1>
+        <p>Você usará esta conta para acessar todo o conteúdo disponível dentro da NewTV+.</p>
+      </div>
+      <form class='form' action="">
+        <div>
+          <label for="email"></label>
+          <input type="text" id="email" name="emai" placeholder="E-mail">
+        </div>
+        <div class='senha'>
+          <label for="senha"></label>
+          <input type="password" id="senha" name="senha" placeholder="Senha">
+          <p>A senha deve ter 8 ou mais caracteres, letras maiúsculas e minúsculas e pelo menos um número.</p>
+        </div>
+        <div>
+          <label for="nome"></label>
+          <input type="text" id="nome" name="nome" placeholder="Nome">
+        </div>
+        <div>
+          <label for="sobrenome"></label>
+          <input type="text" id="sobrenome" name="sobrenome" placeholder="Sobrenome">
+        </div>
+        <div>
+          <label for="nascimento"></label>
+          <input type="text" id="nascimento" name="nascimento" placeholder="Data de Nascimento">
+        </div>
+        <div>
+          <label for="local"></label>
+          <input type="text" id="local" name="loca" placeholder="País/Região">
+        </div>
+        <div class="checkbox-group">
+          <label><input type="checkbox" name="atualizacoes"> Receber Atualizações <p> Receba e‑mails e comunicações da NewTV+, incluindo lançamentos, conteúdos exclusivos, ofertas especiais, comunicações de marketing e recomendações de apps, músicas, filmes, TV, livros, podcasts e muito mais.</p> </label>
+          <label><input type="checkbox" name="termos" required> Aceitar os Termos e condições</label>
+          <P class='aviso'>Ao selecionar “Continuar”, você aceita os Termos e condições dos Serviços de mídia da NewTV+ e confirma que iniciará sessão neste navegador.</P>
+        </div>
+        <div class="buttons">
+          <button type="submit" class="buttom">Continuar</button>
+        </div>
+      </form>
+    </div>
+  </article>
   <script src="script.js"></script>
 </body>
 
