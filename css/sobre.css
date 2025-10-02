@@ -59,7 +59,7 @@
 .sobre-plano h2 {
   margin-bottom: 12px;
 }
-.sobre-plano p:has(+ a.buttom) {
+.sobre-plano p:has(+ a.button) {
   margin-bottom: 80px;
 }
 
@@ -69,7 +69,7 @@
     margin-left: auto;
     margin-right: auto;
   }
-  .sobre-plano p:has(+ a.buttom) {
+  .sobre-plano p:has(+ a.button) {
     margin-bottom: 40px;
   }
 

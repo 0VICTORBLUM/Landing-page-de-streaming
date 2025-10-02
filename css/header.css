@@ -16,7 +16,7 @@
 }
 
 @media (max-width: 750px) {
-  .header > .buttom {
+  .header > .button {
     display: none;
   }
   .header {

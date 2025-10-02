@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // MODAL DE INSCRIÇÃO
-  const links = document.querySelectorAll("a.buttom");
+  const links = document.querySelectorAll("a.button");
   const modalInscricao = document.getElementById("modal-inscricao");
   const fecharInscricao = modalInscricao.querySelector(".fechar-modal");
 
