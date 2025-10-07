@@ -24,6 +24,10 @@
   left: 20px;
   margin: 0;
 }
+.banner-txt > .font-2-x {
+  color: var(--c1);
+  font-weight: 800;
+}
 
 .sinopse-info {
   display: flex;
@@ -54,18 +58,18 @@
   text-decoration: none;
   width: fit-content;
   margin: 20px 0px;
-  border: 2px solid var(--l1);
+  background-color: var(--l1);
+  color: var(--c1);
   border-radius: 50px;
-  background-color: transparent;
-  color: var(--l1);
   padding: 8px 16px;
   text-align: center;
   transition: 0.5s ease;
 }
 
 .sinopse-txt a:hover {
-  background-color: var(--l1);
-  color: var(--c1);
+  border: 2px solid var(--l1);
+  background-color: transparent;
+  color: var(--l1);
 }
 
 /* codigo para transformar article em modal  */

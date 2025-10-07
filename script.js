@@ -43,22 +43,21 @@ document.addEventListener("DOMContentLoaded", () => {
 
   imagens.forEach((img) => {
     img.addEventListener("click", () => {
+      const index = parseInt(img.dataset.index);
+      const anime = window.animes[index];
+
+      if (!anime) return;
+
+      modalSinopse.querySelector(".banner-sinopse img").src = anime.imagem;
+      modalSinopse.querySelector(".banner-txt h2").textContent = anime.titulo;
+      modalSinopse.querySelector(".sinopse-info p").textContent =
+        anime.temporadas;
+      modalSinopse.querySelector(".sinopse-txt p.font-card").textContent =
+        anime.descricao;
+
       modalSinopse.style.display = "block";
       overlay.style.display = "block";
     });
-  });
-
-  fecharSinopse.addEventListener("click", () => {
-    modalSinopse.style.display = "none";
-    overlay.style.display = "none";
-  });
-
-  window.addEventListener("click", (e) => {
-    if (e.target === overlay) {
-      modalSinopse.style.display = "none";
-      modalInscricao.style.display = "none";
-      overlay.style.display = "none";
-    }
   });
 
   // MODAL DE INSCRIÇÃO
