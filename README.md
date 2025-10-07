@@ -22,6 +22,8 @@ Projeto de estudo desenvolvido com foco em práticas modernas de front-end. Trat
 - Seções de destaque para filmes/séries
 - Navegação simulada e estrutura modular
 
+🔗 [Acesse a landing page aqui](https://0victorblum.github.io/landing-page-de-streaming/)
+
 ## 🚀 Como executar o projeto
 
 1. Clone o repositório:
