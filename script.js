@@ -87,3 +87,48 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const track = document.querySelector(".carrossel-track");
+  const images = Array.from(document.querySelectorAll(".carrossel-image"));
+  let currentIndex = 0;
+  const intervalMs = 5000;
+  let intervalId = null;
+
+  function goToIndex(index) {
+    currentIndex = ((index % images.length) + images.length) % images.length;
+    images.forEach((img) => img.classList.remove("active"));
+    images[currentIndex].classList.add("active");
+    track.style.transform = `translateX(-${currentIndex * 100}%)`;
+  }
+
+  function next() {
+    goToIndex(currentIndex + 1);
+  }
+
+  function startAuto() {
+    stopAuto();
+    intervalId = setInterval(next, intervalMs);
+  }
+
+  function stopAuto() {
+    if (intervalId) {
+      clearInterval(intervalId);
+      intervalId = null;
+    }
+  }
+
+  if (images.length > 0) {
+    goToIndex(0);
+    startAuto();
+
+    const carrosselEl = document.querySelector(".carrossel");
+    carrosselEl.addEventListener("mouseenter", stopAuto);
+    carrosselEl.addEventListener("mouseleave", startAuto);
+
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "ArrowRight") next();
+      if (e.key === "ArrowLeft") goToIndex(currentIndex - 1);
+    });
+  }
+});
