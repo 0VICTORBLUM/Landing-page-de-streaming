@@ -7,7 +7,7 @@
   transform: translateX(-50%);
   width: 100%;
   max-width: 700px;
-  background-color: var(--c1);
+  background-color: var(--c12);
   border-radius: 16px;
   z-index: 1000;
   overflow-y: auto; /* adiciona barra de rolagem lateral */
@@ -25,6 +25,7 @@
 .fechar-inscricao {
   cursor: pointer;
   font-size: 2rem;
+  color: var(--c1);
 }
 
 /* Conteúdo interno */
@@ -64,6 +65,7 @@ input:focus {
 
 .form .senha p {
   margin-bottom: 24px;
+  color: var(--c8);
 }
 
 .checkbox-group {
@@ -78,6 +80,7 @@ input:focus {
   flex-direction: column;
   font-size: 1rem;
   line-height: 1.4;
+  color: var(--c1);
 }
 
 .checkbox-group input[type="checkbox"] {
@@ -102,8 +105,29 @@ input:focus {
   margin-bottom: 24px; /* espaçamento maior abaixo do aviso */
   font-size: 0.875rem;
   text-align: left;
+  color: var(--c8);
 }
 
 .inscricao .button {
   margin-bottom: 40px;
+}
+
+@media (max-width: 900px) {
+  .inscricao {
+    max-width: 600px;
+  }
+  .form .senha input {
+    padding: 16px 8px;
+    font-size: 1rem;
+  }
+  .form input:not([type="checkbox"]):not([type="password"]) {
+    padding: 16px 8px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 750px) {
+  .inscricao {
+    margin: 20px;
+  }
 }

@@ -94,8 +94,17 @@
   position: absolute;
   top: 20px;
   right: 20px;
-  font-size: 24px;
   color: var(--c1);
   cursor: pointer;
   z-index: 1001; /* Garante que fique acima do conteúdo */
+}
+
+@media (max-width: 750px) {
+  .card-sinopse {
+    max-width: 500px;
+    height: auto;
+  }
+  .sinopse-info p {
+    font-size: 0.75rem;
+  }
 }
