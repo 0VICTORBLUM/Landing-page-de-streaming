@@ -108,3 +108,14 @@
     font-size: 0.75rem;
   }
 }
+
+@media (max-width: 400px) {
+  .card-sinopse {
+    max-width: 250px;
+    height: auto;
+    margin: 40px 20px;
+  }
+  .sinopse-info p {
+    font-size: 0.75rem;
+  }
+}
