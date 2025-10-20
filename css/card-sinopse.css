@@ -82,9 +82,10 @@
   left: 50%;
   transform: translate(-50%, -50%); /* centraliza perfeitamente */
   width: 100%;
+  box-sizing: border-box;
+  width: calc(100% - 50%);
   max-width: 750px;
   height: auto;
-  box-sizing: border-box;
   background-color: var(--c13);
   color: var(--c1);
   border-radius: 16px;
@@ -109,15 +110,22 @@
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 600px) {
   .card-sinopse {
-    max-width: 250px;
     margin: 40px 20px;
+    box-sizing: border-box;
+    width: calc(100% - 20px);
   }
   .sinopse-info p {
     font-size: 0.75rem;
   }
   .font-card {
     font-size: 1rem;
+  }
+  .sinopse-txt > .audio {
+    display: none;
+  }
+  .sinopse-txt {
+    grid-template-columns: 1fr;
   }
 }

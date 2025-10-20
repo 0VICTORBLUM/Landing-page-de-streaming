@@ -115,8 +115,8 @@
   }
 }
 
-@media (max-width: 750px) {
-  .sobre-plano .icon {
-    display: none;
+@media (max-width: 600px) {
+  .lista {
+    grid-template-columns: 1fr;
   }
 }
