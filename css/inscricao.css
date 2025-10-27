@@ -14,6 +14,10 @@
   box-sizing: border-box;
 }
 
+.inscricao::-webkit-scrollbar {
+  display: none;
+}
+
 .inscricao .header {
   display: flex;
   justify-content: space-between; /* span vai para esquerda, h1 para direita */
@@ -30,7 +34,8 @@
 
 /* Conteúdo interno */
 .conteudo {
-  padding: 24px 64px;
+  /* padding: 24px 42px; */
+  margin: 24px 42px;
 }
 
 .titulo h1 {
@@ -128,13 +133,20 @@ input:focus {
 
 @media (max-width: 750px) {
   .inscricao {
-    margin: 20px;
+    position: fixed;
+    top: 40%;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow-y: auto;
+    box-sizing: border-box;
   }
 }
 
 @media (max-width: 400px) {
   .inscricao {
-    margin: 40px 20px;
-    max-width: 250px;
+    margin: 30% 0;
+    overflow-y: auto;
+    width: calc(100% - 20px);
   }
 }

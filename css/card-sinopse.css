@@ -83,13 +83,16 @@
   transform: translate(-50%, -50%); /* centraliza perfeitamente */
   width: 100%;
   box-sizing: border-box;
-  width: calc(100% - 50%);
-  max-width: 750px;
+  max-height: 80vh;
+  width: calc(100% - 30%);
   height: auto;
   background-color: var(--c13);
   color: var(--c1);
   border-radius: 16px;
   overflow-y: auto;
+}
+.card-sinopse::-webkit-scrollbar {
+  display: none;
 }
 .card-sinopse .fechar-sinopse {
   position: absolute;
@@ -102,30 +105,31 @@
 
 @media (max-width: 750px) {
   .card-sinopse {
-    max-width: 500px;
-    height: auto;
-  }
-  .sinopse-info p {
-    font-size: 0.75rem;
-  }
-}
-
-@media (max-width: 600px) {
-  .card-sinopse {
-    margin: 40px 20px;
-    box-sizing: border-box;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-height: 80vh; /* mantém margem visual top/bottom */
+    overflow-y: auto;
     width: calc(100% - 20px);
+    box-sizing: border-box;
   }
   .sinopse-info p {
     font-size: 0.75rem;
-  }
-  .font-card {
-    font-size: 1rem;
   }
   .sinopse-txt > .audio {
     display: none;
   }
   .sinopse-txt {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 400px) {
+  .sinopse-info p {
+    font-size: 0.75rem;
+  }
+  .font-card {
+    font-size: 1rem;
   }
 }
