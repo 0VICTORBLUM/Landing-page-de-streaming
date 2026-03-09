@@ -132,3 +132,36 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+
+
+const vendedores = [
+  "5541996309392",
+  "554132864690",
+  "554132864865",
+];
+
+document.getElementById("btn-whatsapp").addEventListener("click", function(e) {
+
+  e.preventDefault();
+
+  let indice = localStorage.getItem("vendedorIndex");
+
+  if (indice === null) {
+    indice = 0;
+  } else {
+    indice = parseInt(indice);
+  }
+
+  const vendedor = vendedores[indice];
+
+  indice = (indice + 1) % vendedores.length;
+
+  localStorage.setItem("vendedorIndex", indice);
+
+  const mensagem = "Olá, vim pelo site e gostaria de um orçamento.";
+
+  const url = `https://wa.me/${vendedor}?text=${encodeURIComponent(mensagem)}`;
+
+  window.location.href = url;
+
+});
